@@ -3,57 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meus Links de Afiliado</title>
-  
-   <style> 
+  <title>GlobalSpot</title>
+  <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-
     }
 
-    body { 
+    body {
       min-height: 100vh;
       width: 100vw;
       /* Substitua a URL abaixo pela imagem de fundo que desejar */
-      background:url('https://marketplace.canva.com/7mw6M/MAG6RO7mw6M/1/tl/canva-fundo-com-gradiente-azul-claro-MAG6RO7mw6M.jpg')center;
+      background: url('https://plus.unsplash.com/premium_photo-1675490808234-453b817d9a72?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
       background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: Arial, sans-serif;
       padding: 20px;
-     }
+    }
 
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-      gap: 10px;
-      max-width:2000px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
       width: 100%;
-     
       justify-items: center;
-
     }
-  
+
    
-
-
-    
-   .card1 { background-color: #ffff00; border: 1.5px solid #fcfcff;border-radius: 30px;padding: 5px;
-           height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+    /*.card1 { background-color: #ffff00; border: 1.5px solid #fcfcff;border-radius: 30px;padding: 5px;
+           height: 350px;width: 140%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
            box-shadow: 0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
     .card1:hover {transform: translateY(-5px);}
-    .card1 h3 {font-size: 1rem;color: #000000;margin-bottom: 5px; }
+    .card1 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
+    .card1 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0004ff;color: #fff;
+             text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card1 .btn-link:hover {background-color: #1cd02b;}
+    .card1 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 20px;}
+
+
+    .card2 { background-color: #C04F34; border: 1.5px solid #f0f0f7;border-radius: 30px;padding: 5px;
+        height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card2:hover {transform: translateY(-5px);}
+    .card2 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
+    .card2 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011fffd;color: #fff;
+        text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card2 .btn-link:hover {background-color: #1cd02b;}
+    .card2 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 35px;}
+
+
+    .card3 { background-color: #ffd700; border: 1.5px solid #e7e7ee;border-radius: 30px;padding: 5px;
+        height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card3:hover {transform: translateY(-5px);}
+    .card3 h3 {font-size: 1rem;color: #000000;margin-bottom: 10px; }
+    .card3 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
+         text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card3 .btn-link:hover {background-color: #1cd02b;}
+    .card3 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 35px;}
+
+
+    .card4 { background-color:#87ceeb; border: 1.5px solid #d7d4d8;border-radius: 30px;padding: 5px;
+        height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card4:hover {transform: translateY(-5px);}
+    .card4 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
+    .card4 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
+         text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card4 .btn-link:hover {background-color: #1cd02b;}
+    .card4 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 35px;}
+
+
+    .card5 { background-color: #f6f6f6eb; border: 1.5px solid #ededf0;border-radius: 30px;padding: 5px;
+           height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+           box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card5:hover {transform: translateY(-5px);}
+    .card5 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
+    .card5 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
+      text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card5 .btn-link:hover {background-color: #1cd02b;}
+    .card5 img { border: 1px solid #000000;width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 35px;}
+
+    .card6 { background-color: lch(99.93% 0.35 201.29); border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 5px;
+           height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+           box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card6:hover {transform: translateY(-5px);}
+    .card6 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
+    .card6 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
+         text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card6 .btn-link:hover {background-color: #1cd02b;}
+    .card6 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 35px;}
+
+      .card7 { background-color: #c0c0c0; border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 5px;
+           height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+           box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card7:hover {transform: translateY(-5px);}
+    .card7 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
+    .card7 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
+         text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card7 .btn-link:hover {background-color: #1cd02b;}
+    .card7 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 35px;}*/
+    
+.card1 { background-color: #ffff00;  
+      border: 1.5px solid #fcfcff;border-radius: 30px;padding: 5px;
+          height: 350px; width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+           box-shadow: 0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card1:hover {transform: translateY(-5px);}
+    .card1 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
     .card1 h4 {font-size: 8px;color: #000000;margin-bottom: 5px; }
     .card1 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;height: 40px;padding: 2px 0;background-color: #0004ff;color: #fff;
              text-decoration: none;font-weight: bold;border-radius: 10px;transition: background-color 0.2s ease;}
     .card1 .btn-link:hover {background-color: #1cd02b;}
-    .card1 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom:5px;}
+    .card1 img {height: 160px;object-fit: cover;border-radius: 50px;margin-bottom:25px;}
 
-
-    .card2 { background:url('https://static.vecteezy.com/ti/fotos-gratis/p1/36717896-ai-gerado-uma-garoto-e-jogando-com-lego-blocos-dentro-dele-sala-de-estar-gratis-foto.jpg') center;
+ .card2 { background:url('https://static.vecteezy.com/ti/fotos-gratis/p1/36717896-ai-gerado-uma-garoto-e-jogando-com-lego-blocos-dentro-dele-sala-de-estar-gratis-foto.jpg') center;
      background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
     border: 1.5px solid #f0f0f7;border-radius: 30px;padding: 5px;
         height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
@@ -66,34 +133,73 @@
    .card2 .btn-link:hover {background-color: #1cd02b;}
     .card2 img {height: 160px;margin-bottom: 60px;}
 
+   /* .card2 { background:url('https://static.vecteezy.com/ti/fotos-gratis/p1/36717896-ai-gerado-uma-garoto-e-jogando-com-lego-blocos-dentro-dele-sala-de-estar-gratis-foto.jpg') center;
+     background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
+    border: 1.5px solid #f0f0f7;border-radius: 30px;padding: 5px;
+        height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card2:hover {transform: translateY(-5px);}
+    .card2 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
+    .card2 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011fffd;color: #ffffff;
+        text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card2 .btn-link:hover {background-color: #1cd02b;}
+    .card2 img {height: 160px;margin-bottom: 60px;}*/
 
-    .card3 { background:url('https://images.tcdn.com.br/img/img_prod/1324789/anel_de_moeda_antiga_modelo_laurel_com_zircnias_1_20260518105056_7834225fbda1.jpg')center; 
+
+    /*.card3 {  background:url('https://images.tcdn.com.br/img/img_prod/1324789/anel_de_moeda_antiga_modelo_laurel_com_zircnias_1_20260518105056_7834225fbda1.jpg')center; 
     background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
     border: 1.5px solid #e7e7ee;border-radius: 30px;padding: 5px;
         height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
         box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
     .card3:hover {transform: translateY(-5px);}
     .card3 h3 {font-size: 1rem;color: #000000;margin-bottom: 10px; }
+
     .card3 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
          text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
     .card3 .btn-link:hover {background-color: #1cd02b;}
-    .card3 img {height: 160px;margin-bottom: 90px;}
+    .card3 img {height: 160px;margin-bottom: 90px;}*/
+.card3 { border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 0px;
+           height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+           box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card3:hover {transform: translateY(-5px);}
+    .card3 .btn-link {background:url('https://images.tcdn.com.br/img/img_prod/1324789/anel_de_moeda_antiga_modelo_laurel_com_zircnias_1_20260518105056_7834225fbda1.jpg')center;color: #544706;
+     font-weight: bold;text-decoration: none;height: 350px;background-size: cover;display: flex;align-items: center;font-family: Arial, sans-serif;
+    border-radius: 30px;padding: 5px;
+        width: 100%; max-width: 240px;flex-direction: column-reverse;font-size: 13px;}
+    
 
+.card4 { border: 1.5px solid #d7d4d8;border-radius: 30px;padding: 0px;
+        height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card4:hover {transform: translateY(-5px);}
+.card4 .btn-link{ background:url('https://unifique.com.br/upload/articles/2024/08/md_66c379f228185f6c.jpg')center;color: #ffffff;
+     font-weight: bold;text-decoration: none;height: 350px;background-size: cover;display: flex;align-items: center;font-family: Arial, sans-serif;
+    border-radius: 30px;padding: 5px;
+        width: 100%; max-width: 240px;flex-direction: column-reverse;font-size: 12px;
+          }
+          
+    /*card4 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
+    .card4 h4 { font-size: 10px;color: #ffff;margin-bottom: 2px; }
+    .card4 .btn-link {display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
+         text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
+    .card4 .btn-link:hover {background-color: #1cd02b;}*/
+  
 
-    .card4 { background:url('https://unifique.com.br/upload/articles/2024/08/md_66c379f228185f6c.jpg')center;
+   /* .card4 { background:url('https://unifique.com.br/upload/articles/2024/08/md_66c379f228185f6c.jpg')center;
      background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
     border: 1.5px solid #d7d4d8;border-radius: 30px;padding: 5px;
         height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
         box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
     .card4:hover {transform: translateY(-5px);}
     .card4 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
-    .card4 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
+    .card4 h4 { font-size: 10px;color: #ffff;margin-bottom: 2px; }
+    .card4 .btn-link {display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
          text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
     .card4 .btn-link:hover {background-color: #1cd02b;}
-    .card4 img {height: 160px;margin-bottom: 80px;}
+    .card4 img {height: 160px;margin-bottom: 60px;}*/
 
 
-    .card5 { background:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1191291509800347153/original/5ad75cd8-79a3-4f3c-9eb5-3b28380fd8fb.jpeg?im_w=720') center;
+    /*.card5 { background:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1191291509800347153/original/5ad75cd8-79a3-4f3c-9eb5-3b28380fd8fb.jpeg?im_w=720') center;
      background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
     border: 1.5px solid #ededf0;border-radius: 30px;padding: 5px;
            height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
@@ -103,9 +209,18 @@
     .card5 .btn-link {border: 0.5px solid #dfdfdf46;display: inline-block; width: 90%;padding: 10px 0;background-color: #2105fa;color: #fff;
       text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
     .card5 .btn-link:hover {background-color: #1cd02b;}
-    .card5 img { height: 160px;margin-bottom: 80px;}
+    .card5 img { height: 160px;margin-bottom: 80px;}*/
+.card5 { border: 1.5px solid #d7d4d8;border-radius: 30px;padding: 0px;
+        height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card5:hover {transform: translateY(-5px);}
+.card5 .btn-link{ background:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1191291509800347153/original/5ad75cd8-79a3-4f3c-9eb5-3b28380fd8fb.jpeg?im_w=720')center;color: #ffffff;
+     font-weight: bold;text-decoration: none;height: 350px;background-size: cover;display: flex;align-items: center;font-family: Arial, sans-serif;
+    border-radius: 30px;padding: 5px;
+        width: 100%; max-width: 240px;flex-direction: column-reverse;font-size: 16px;
+          }
 
-    .card6 {background-color: #dfdfdf; border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 5px;
+    .card6 { background-color: lch(99.93% 0.35 201.29); border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 5px;
            height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
            box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
     .card6:hover {transform: translateY(-5px);}
@@ -125,7 +240,7 @@
     .card7 .btn-link:hover {background-color: #01ff16;}
     .card7 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 35px;}
 /*0000000000000000000000000000000000000000000000000000000000000000000000000000000*/
-     .card8 { background: url('https://www.moneytimes.com.br/uploads/2021/12/mercado-pago.jpg')center; 
+    /* .card8 { background: url('https://www.moneytimes.com.br/uploads/2021/12/mercado-pago.jpg')center; 
      background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
      border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 5px;
            height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
@@ -133,23 +248,29 @@
     .card8:hover {transform: translateY(-5px);}
     .card8 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
     .card8 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
-         text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
-    .card8 .btn-link:hover {background-color: #1cd02b;}
-    .card8 img {height: 160px;margin-bottom: 80px;}
+         text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}*/
+    .card8 { border: 1.5px solid #d7d4d8;border-radius: 30px;padding: 0px;
+        height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card8:hover {transform: translateY(-5px);}
+.card8 .btn-link{ background:url('https://www.moneytimes.com.br/uploads/2021/12/mercado-pago.jpg')center;color: #ffffff;
+     font-weight: bold;text-decoration: none;height: 350px;background-size: cover;display: flex;align-items: center;font-family: Arial, sans-serif;
+    border-radius: 30px;padding: 5px;
+        width: 100%; max-width: 240px;flex-direction: column-reverse;font-size: 12px;
+          }
 
- .card9 { background:url('https://capitalist.com.br/wp-content/uploads/2021/05/99Pay.jpg') center;
- background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
- border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 5px;
+ .card9 { border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 0px;
            height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
            box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
     .card9:hover {transform: translateY(-5px);}
-    .card9 h3 {font-size: 1rem;color: #000000;margin-bottom: 25px; }
-    .card9 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
-         text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
-    .card9 .btn-link:hover {background-color: #1cd02b;}
-    .card9 img {height: 160px;margin-bottom: 80px;}
+    .card9 .btn-link {background:url('https://capitalist.com.br/wp-content/uploads/2021/05/99Pay.jpg') center; flex-direction: column;
+    height: 350px;width: 100%;display: inline-block; width: 100%;padding: 20px 0;color: #fff;
+         text-decoration: none;font-weight: bold;border-radius: 30px;transition: background-color 0.2s ease;
+          background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;}
+    
+   
 
- .card10 { background:url('https://loja.radio365.com.br/wp-content/uploads/2025/01/point_smart2_2.webp')  center;
+ /*.card10 { background:url('https://loja.radio365.com.br/wp-content/uploads/2025/01/point_smart2_2.webp')  center;
   background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
  border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 5px;
            height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
@@ -159,8 +280,16 @@
     .card10 .btn-link {border: 1.5px solid #171717;display: inline-block; width: 100%;padding: 20px 0;background-color: #0011ff;color: #fff;
          text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
     .card10 .btn-link:hover {background-color: #1cd02b;}
-    .card10 img {height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 80px;}
-
+    .card10 img {height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 80px;}*/
+.card10 { border: 1.5px solid #d7d4d8;border-radius: 30px;padding: 0px;
+        height: 350px;width: 110%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .card10:hover {transform: translateY(-5px);}
+.card10 .btn-link{ background:url('https://loja.radio365.com.br/wp-content/uploads/2025/01/point_smart2_2.webp')center;color: #ffffff;
+     font-weight: bold;text-decoration: none;height: 350px;background-size: cover;display: flex;align-items: center;font-family: Arial, sans-serif;
+    border-radius: 30px;padding: 0px;
+        width: 100%; max-width: 240px;flex-direction: column-reverse;font-size: 12px;
+          }
  .card11{   background: url('https://capitalist.com.br/wp-content/uploads/2021/05/99Pay.jpg'); 
  background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif; 
  border: 1.5px solid #f9f9fc;border-radius: 30px;padding: 5px;
@@ -172,9 +301,7 @@
          text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
     .card11 .btn-link:hover {background-color: #1cd02b;}
     .card11 img {height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 65px;}
-     
-     
-   
+
      .card12 { background:url('https://cdn.prod.website-files.com/65c1399ac999a342139b5069/68377e06c66c6a6a114e08ac_Pix-por-aproximac%CC%A7a%CC%83o_uber-1x1.webp');
      background-size: cover;display: flex;justify-content: center;align-items: center;font-family: Arial, sans-serif;
     border: 1.5px solid #d7d4d8;border-radius: 30px;padding: 5px;
@@ -189,16 +316,13 @@
     .card12 .btn-link:hover {background-color: #1cd02b;}
     .card12 img {height: 160px;margin-bottom: 60px;}
 
-    
   </style>
-  
 </head>
-
 <body>
 
   <div class="container">
 
-     <div class="card1">
+    <div class="card1">
       <img src="https://http2.mlstatic.com/storage/pog-cm-admin/calm-assets/mercado-libre-thumbnail--1538x1510--b612412b.webp" alt="Produto 4">
       <h3>"Variedade e qualidade em um só lugar. Vem conferir as nossas novidades!".</h3>
       <a href="https://central-de-vendas-lemon.vercel.app/" target="_blank" class="btn-link">Confira ofertas no MercadoLivre</a>
@@ -206,129 +330,102 @@
     </div>
 
     <div class="card4">
-      <img > <h3> </h3> <a href="https://onesim.tech?ref=504D3457" target="_blank" class="btn-link">Conferir</a>
+      <img > <h3> </h3> <a href="https://onesim.tech?ref=504D3457" target="_blank" class="btn-link">Internet no mundo todo sem trocar de CHIP
+      Privacidade e rapidez com cripto 
+      Ativação em minutos (100%Digital)
+      Sem contratos ou fidelidade</a>
+    
+     <!-- <h4>Internet no mundo todo sem trocar de CHIP
+      Privacidade e rapidez com cripto 
+      Ativação em minutos (100%Digital)
+      Sem contratos ou fidelidade
+     </h4>-->
+
     </div>
 
-     <div class="card9"> <img > <h3> </h3> <a href=" https://d.99app.com/djYooVK?resource_id=577" target="_blank" class="btn-link">Conferir</a>
+     <div class="card9"> <img > <h3> </h3> <a href=" https://d.99app.com/djYooVK?resource_id=577" target="_blank" class="btn-link">Passageiro 99:
+para ir aonde quiser</a>
     </div> 
      
-<div class="card3"> <img > <h3></h3> <a href="https://www.awin1.com/cread.php?awinmid=106747&awinaffid=3022461&ued=https%3A%2F%2Fwww.aliancasimperiais.com.br%2F" target="_blank" class="btn-link">Conferir</a>
+<div class="card3"> <img > <h3></h3> <a href="https://www.awin1.com/cread.php?awinmid=106747&awinaffid=3022461&ued=https%3A%2F%2F
+  www.aliancasimperiais.com.br%2F" target="_blank" class="btn-link">Pessoas e Momentos Especiais O amor merece ser celebrado com o 
+  brilho que nunca apaga. Toque no link abaixo para escolher a aliança perfeita para o seu noivado ou casamento na Alianças Imperiais.</a>
+    
+</div>
+
+    <div class="card8"> <img> <h3></h3> <a href="https://mpago.li/2J2pdcW" target="_blank" class="btn-link"></a>
     </div>
 
-    <div class="card8"> <img> <h3></h3> <a href="https://mpago.li/2J2pdcW" target="_blank" class="btn-link">Conferir</a>
+    <div class="card10"> <img > <h3></h3> <a href="https://mpago.li/2jgWkh8" target="_blank" class="btn-link"></a>
     </div>
 
-    <div class="card10"> <img > <h3></h3> <a href="https://mpago.li/2jgWkh8" target="_blank" class="btn-link">Adiquirir</a>
-    </div>
-
-
-    <div class="card12"><!--infinit pey-->
+     <div class="card12"><!--infinit pey-->
       <img > <h3> </h3> <a href="https://infinitepay.onelink.me/IGWD/gedeonesousa" target="_blank" class="btn-link"></a>
     </div>
-
+    
 <div class="card2"> <img > <h3></h3> <a href="https://www.awin1.com/cread.php?awinmid=30511&awinaffid=3022461&ued=https%3A%2F%2Fwww.lego.com.br%2F" target="_blank" class="btn-link"></a>
     </div>
 
-     <div class="card5"> <img > <h3></h3><a href="https://www.awin1.com/cread.php?awinmid=107484&awinaffid=3022461&ued=https%3A%2F%2Fseazone.com.br%2F" target="_blank" class="btn-link">Alugue onde o Brasil é mais bonito</a>
+     <div class="card5"> <img > <h3></h3><a href="https://www.awin1.com/cread.php?awinmid=107484&awinaffid=3022461&ued=https%3A%2F%2Fseazone.com.br%2F" target="_blank" class="btn-link">Alugue onde
+o Brasil é mais bonito
+Alugar
+Comprar</a>
    </div>
 
  <div class="card7"> <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6006bb093e88be0001c0e501/0x0.png" alt="Produto 3">
       <h3>CRIE SEU PRATO DE JOIAS PERSONALIZADAS</h3>
       <a href="https://www.awin1.com/cread.php?awinmid=123706&awinaffid=3022461&ued=https%3A%2F%2Fwww.ourosjewels.com%2F" target="_blank" class="btn-link">Conferir</a>
     </div>
- </div>
 
-</body>
-</html>
-     <!--<div class="card6">
-      <iframe src="https://cdn.prod.website-files.com/65c1399ac999a342139b5069%2F6aa31848d87549753337f11a_TAPISELLI%20-%20TRANSACAO%20TAP%20v2%20%281%29_mp4.mp4" </iframe>
+     <div class="card6">
+      <img src="https://super.abril.com.br/wp-content/uploads/2018/04/bibliotecas.png?quality=70&w=1024&h=682&crop=1" alt="Produto 4">
       <h3>Livros, Bíblias, Obras Teológicas.</h3>
       <a href="https://www.centralgospel.com.br/?ref=gedeone-de-sousa-rodrigues-2119" target="_blank" class="btn-link">Conferir</a>
     </div>
 
-    <!-- <div class="card11">
-      <img >
-      <h3></h3>
-      <a href="https://www.centralgospel.com.br/?ref=gedeone-de-sousa-rodrigues-2119" target="_blank" class="btn-link">Conferir</a>
+   <!-- <div class="card1">
+      <img src="https://http2.mlstatic.com/storage/pog-cm-admin/calm-assets/mercado-libre-thumbnail--1538x1510--b612412b.webp" alt="Produto 4">
+      <h3>"Variedade e qualidade em um só lugar. Vem conferir as nossas novidades!".</h3>
+      <a href="https://central-de-vendas-lemon.vercel.app/" target="_blank" class="btn-link">Conferir</a>
     </div>
 
-  <!-- <div class="card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxmqpj7fydXrtM7WgrrC12qPS_FD2LQBpr2M1eHYx28yaAa1VyrzVpL7c&s=10" alt="Produto 4">
-      <h3>Livros, Bíblias, Obras Teológicas.</h3>
-      <a href="https://www.centralgospel.com.br/?ref=gedeone-de-sousa-rodrigues-2119" target="_blank" class="btn-link">centralgospel</a>
-    </div>-->
-    
-    <!--sesao mercado livre
-         <div class="card1">
-      <img src="https://http2.mlstatic.com/storage/pog-cm-admin/calm-assets/mercado-libre-thumbnail--1538x1510--b612412b.webp" alt="Produto 4">
-      <h3>Você pode fazer manutenções simples em casa!Peças e Acessórios.</h3>
-      <a href="https://meli.la/1DEmwYZ" target="_blank" class="btn-link">MercadoLivre</a>
-    </div>-->
-
- <!--<div class="card">
-  
-      <img src="https://cdn.pixabay.com/photo/2022/09/25/22/25/iphones-7479304_1280.jpg" alt="Produto 4">
-      <h3>Celulatres e Acessórios.</h3>
-      <a href="https://meli.la/2yyAtdy" target="_blank" class="btn-link">MercadoLivre</a>
-    </div>-->
-
-
- <!--<div class="container1">
-    <div class="card1">
-      <img src="https://http2.mlstatic.com/storage/pog-cm-admin/calm-assets/mercado-libre-thumbnail--1538x1510--b612412b.webp" alt="Produto 4">
-      <h3>Você pode fazer manutenções simples em casa!Peças e Acessórios.</h3>
-      <a href="https://meli.la/1DEmwYZ" target="_blank" class="btn-link">MercadoLivre</a>
+    <div class="card2">
+      <img src="https://static.vecteezy.com/ti/fotos-gratis/p1/36717896-ai-gerado-uma-garoto-e-jogando-com-lego-blocos-dentro-dele-sala-de-estar-gratis-foto.jpg" alt="Produto 4">
+      <h3>Está à procura do presente perfeito?</h3>
+      <a href="https://www.awin1.com/cread.php?awinmid=30511&awinaffid=3022461&ued=https%3A%2F%2Fwww.lego.com.br%2F" target="_blank" class="btn-link">Conferir</a>
     </div>
-</div>
-    fin da sesao mercado livre-->
 
-    <!--<div class="cardv">
-  <iframe
-src="https://player.vimeo.com/video/1193291223?background=1&autoplay=1&loop=1&muted=1&autopause=0" 
- frameborder="0" 
-  allow="autoplay; fullscreen" 
-  allowfullscreen> 
-</iframe> 
-</div>-->
-
-    <!-- <div class="card2">
-      <img src="https://images.tcdn.com.br/img/img_prod/1324789/pasta_especial_para_polimento_de_aliancas_e_joias_1_20260827094603_2cbf7f7c7258.jpg" alt="Produto 2">
+     
+<div class="card3">
+      <img src="https://images.tcdn.com.br/img/img_prod/1324789/anel_solitrio_de_moeda_antiga_com_zircnia_mod_tuli_1_20260518104431_c046986e5c7d.png" alt="Produto 2">
       <h3>Alianças= Casamento, Compromisso, Namoro, Noivado, Prata, Especiais</h3>
       <a href="https://www.awin1.com/cread.php?awinmid=106747&awinaffid=3022461&ued=https%3A%2F%2Fwww.aliancasimperiais.com.br%2F" target="_blank" class="btn-link">Conferir</a>
-    </div>-->
-
-   <!--<div class="card">
-      <img src="https://unifique.com.br/upload/articles/2024/08/md_66c379f228185f6c.jpg" alt="Produto 1">
-      <h3>TROQUE O SEU CHIP FÍSICO PELO eSIM</h3>
-      <a href="https://onesim.tech?ref=504D3457" target="_blank" class="btn-link">eSIMs</a>
-    </div>-->
-
-    <!--<div class="card">
-      <img src="https://images.tcdn.com.br/img/img_prod/1324789/conjunto_alianas_mod_enrrolado_3mm_anel_poesia_1_20260722085421_d4ac69c344e4.jpg" alt="Produto 2">
-      <h3>Alianças Imperiais BR</h3>
-      <a href="https://www.awin1.com/cread.php?awinmid=106747&awinaffid=3022461&ued=https%3A%2F%2Fwww.aliancasimperiais.com.br%2F" target="_blank" class="btn-link">aliancasimperiais</a>
     </div>
 
-    <div class="card">
+ <div class="card7">
       <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/6006bb093e88be0001c0e501/0x0.png" alt="Produto 3">
       <h3>CRIE SEU PRATO
 JOIAS PERSONALIZADAS</h3>
-      <a href="https://www.awin1.com/cread.php?awinmid=123706&awinaffid=3022461&ued=https%3A%2F%2Fwww.ourosjewels.com%2F" target="_blank" class="btn-link">Ourosjewels</a>
+      <a href="https://www.awin1.com/cread.php?awinmid=123706&awinaffid=3022461&ued=https%3A%2F%2Fwww.ourosjewels.com%2F" target="_blank" class="btn-link">Conferir</a>
     </div>
 
-    <div class="card">
-      <img src="https://institucional.seazone.com.br/wp-content/uploads/2025/03/img-destaque-sazone-franqueados.jpg" alt="Produto 4">
-      <h3>Alugue onde o Brasil é mais bonito</h3>
-      <a href="https://www.awin1.com/cread.php?awinmid=107484&awinaffid=3022461&ued=https%3A%2F%2Fseazone.com.br%2F" target="_blank" class="btn-link">Seazone BR</a>
+      <div class="card4">
+      <img src="https://unifique.com.br/upload/articles/2024/08/md_66c379f228185f6c.jpg" alt="Produto 1">
+      <h3>TROQUE O SEU CHIP FÍSICO PELO eSIM</h3>
+      <a href="https://onesim.tech?ref=504D3457" target="_blank" class="btn-link">Conferir</a>
     </div>
-
-<div class="cardlg">
-      <img src="https://static.vecteezy.com/ti/fotos-gratis/p1/36717896-ai-gerado-uma-garoto-e-jogando-com-lego-blocos-dentro-dele-sala-de-estar-gratis-foto.jpg" alt="Produto 4">
-      <h3>Está à procura do presente perfeito?</h3>
-      <a href="https://www.awin1.com/cread.php?awinmid=30511&awinaffid=3022461&ued=https%3A%2F%2Fwww.lego.com.br%2F" target="_blank" class="btn-link">ASSESAR</a>
     
-     
-</div>-->
+    <div class="card5">
+      <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1191291509800347153/original/5ad75cd8-79a3-4f3c-9eb5-3b28380fd8fb.jpeg?im_w=720" alt="Produto 4">
+      <h3>Alugue onde o Brasil é mais bonito</h3>
+      <a href="https://www.awin1.com/cread.php?awinmid=107484&awinaffid=3022461&ued=https%3A%2F%2Fseazone.com.br%2F" target="_blank" class="btn-link">Conferir</a>
+    </div> -->
 
- 
-  
+   
+   
+    
+  </div>
+
+</body>
+</html>
+
