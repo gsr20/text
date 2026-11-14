@@ -107,6 +107,53 @@
          text-decoration: none;font-weight: bold;border-radius: 30%;transition: background-color 0.2s ease;}
     .card7 .btn-link:hover {background-color: #1cd02b;}
     .card7 img {width: 100%;height: 160px;object-fit: cover;border-radius: 50px;margin-bottom: 35px;}*/
+    .cardt { border: 1.5px solid #d7d4d8;border-radius: 30px;padding: 0px; position: relative;
+        height: 350px;width: 100%; max-width: 240px;display: flex;flex-direction: column;text-align: center;
+        overflow: hidden; box-shadow:  0 6px 6px 0.5pc rgba(0, 0, 0, 0.279);transition: transform 0.3s ease;  }
+    .cardt:hover {transform: translateY(-5px);}
+   .cardt .btn-link {
+  position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+ width: 100%;
+  max-width: 100%;
+ height: 420px;
+  padding: 0px;
+  border-radius:3px;
+  object-fit: cover;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  -webkit-text-stroke: 0.4px #b92128;
+  font-size: 18px;
+  font-weight: bold;
+  flex-direction: column;
+  /*justify-content: center;*/
+  text-decoration: center;
+ 
+  }
+ 
+
+
+.cardt .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 250px;
+ height: 420px;
+  padding: 0px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  border-radius: 30px;
+   overflow: hidden;
+  
+} 
+
+.cardt .btn-link > * {
+    z-index: 1; /* Garante que o texto fique por cima do vídeo */ }
+
     
 .card1 { background-color: #ffff00;  
       border: 1.5px solid #fcfcff;border-radius: 30px;padding: 5px;
@@ -321,6 +368,18 @@
 <body>
 
   <div class="container">
+    <div class="cardt">
+    
+    <h1 href="#" class="btn-link">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="https://sf16-va.tiktokcdn.com/obj/eden-va2/plduptuloz/download/pc_ios_2.mp4" type="video/mp4">
+    </video>
+     <span>Baixe o TikTok Lite no Android</span>
+    <a href="https://www.tiktok.com/d/4/ZS9yrUUMrSRCF-OcoTo/" target="_blank" class="btn-link">
+        </a>
+        
+      </h1>
+    </div>
 
     <div class="card1">
       <img src="https://http2.mlstatic.com/storage/pog-cm-admin/calm-assets/mercado-libre-thumbnail--1538x1510--b612412b.webp" alt="Produto 4">
